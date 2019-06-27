@@ -77,13 +77,6 @@
                                 <rect key="frame" x="64" y="429" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JB-Ki-3tu">
-                                <rect key="frame" x="264" y="80" width="13" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-rs-qp4">
                                 <rect key="frame" x="31" y="212" width="13" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,6 +110,16 @@
                                     <barButtonItem id="AaG-m8-z6P"/>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXJ-nR-gbV">
+                                <rect key="frame" x="242" y="77" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="H">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="izK-E7-Ezu" kind="show" id="uQH-PP-qcr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93447900510000004" green="1" blue="0.99266447150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KJV-Cg-h6j"/>
@@ -126,13 +129,81 @@
             </objects>
             <point key="canvasLocation" x="770.625" y="20.070422535211268"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Dn5-xg-No0">
+            <objects>
+                <viewController id="rTP-Kb-Ymc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hi6-Ar-adM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xmz-2k-Ez2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLK-3z-JBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="781"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JJA-RS-scs">
+            <objects>
+                <viewController id="izK-E7-Ezu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ski-Rb-eQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sevde ablami cok seviyoruuum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAA-ih-hSs">
+                                <rect key="frame" x="42" y="130" width="236" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zE0-MW-YDw">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Ablacim" id="KEC-T0-LfP">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RFw-zI-XIN">
+                                            <color key="tintColor" red="1" green="0.27380495490000001" blue="0.88885367999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="grq-tL-bHK" kind="show" id="EsG-iU-Aw3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P8060276" translatesAutoresizingMaskIntoConstraints="NO" id="p0e-Aw-dxe">
+                                <rect key="frame" x="42" y="248" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Banu ablami da cok seviyoruuum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQQ-ph-gci">
+                                <rect key="frame" x="42" y="446" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93447900510000004" green="1" blue="0.99266447150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bP7-bC-Swe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqq-jU-rsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="20"/>
+        </scene>
     </scenes>
     <resources>
         <image name="20130609_200520" width="3264" height="2448"/>
         <image name="Istanbul-ferry-on-the-Bosphorus-Turkey" width="1600" height="900"/>
         <image name="Istanbul-kedilerin-baskenti-8304" width="645" height="338"/>
+        <image name="P8060276" width="3264" height="2448"/>
         <image name="ev" width="660" height="347"/>
         <image name="istanbul-da-bazi-sokak-isimleri-degistirildi-10428683" width="615" height="410"/>
         <image name="large" width="500" height="500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EsG-iU-Aw3"/>
+    </inferredMetricsTieBreakers>
 </document>
